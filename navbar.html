@@ -52,7 +52,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button id="btn-checar-emails" type="button" class="btn btn-warning">Checar caixa de entrada</button>
+                <button id="btn-checar-emails"  class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#modal-emails">Checar caixa de entrada</button>
             </div>
         </div>        
     </header>
@@ -89,19 +89,20 @@
             <h2>Contatos</h2>
         </section>
     </div>
-    <div class="toast-container"></div>
-    <div class="toast-container position-fixed botton-0 end-0 p-3">
-        <!-- <div class="toast" id="mensagens-alerta"> -->
-            <header class="toast-header">
-                <strong>Importante</strong>
-            </header>
-            <div class="toast-body">
-                Você possui 10 mensagens não lidas
-                <div class="mt-2 pt-2 border-top">
-                    <button data-bs-dismiss="toast" type="button" class="btn btn-danger">Descartar</button>
-                </div>
-            </div>
+        <div class="toast-container">
+            <div class="toast-container position-fixed botton-0 end-0 p-3">
+                <!-- <div class="toast" id="mensagens-alerta"> -->
+                    <header class="toast-header">
+                        <strong>Importante</strong>
+                    </header>
+                    <div class="toast-body">
+                        Você possui 10 mensagens não lidas
+                        <div class="mt-2 pt-2 border-top">
+                            <button data-bs-dismiss="toast" type="button" class="btn btn-danger">Descartar</button>
+                        </div>
+                    </div>
         </div>
+    </div>
     </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script>
